@@ -1,0 +1,100 @@
+/*
+  main color      SLATE     #434455
+  secondary color NAVY BLUE #2E2F42
+  light color     WHITE     #FFFFFF
+  accent          CLOUD     #F4F4FD
+  dark bg color   NAVY BLUE #2E2F42
+  button color    IRIS      #4D5AE5
+*/
+:root {
+  --primary-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --light-color: #ffffff;
+  --accent-color: #f4f4fd;
+  --dark-bg-color: #2e2f42;
+  --button-color: #4d5ae5;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #ffffff;
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header {
+}
+.header-navigation {
+}
+
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.logo-color {
+  color: var(--button-color);
+}
+
+.header-list {
+}
+.header-item {
+}
+.header-link {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.address {
+}
+.address-list {
+}
+.address-item {
+}
+
+.address-email,
+.address-tel {
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+/* main */
+
+.hero {
+  background-color: var(--dark-bg-color);
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--light-color);
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.04em;
+  background-color: var(--button-color);
+  color: var(--light-color);
+}
