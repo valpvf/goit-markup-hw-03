@@ -82,6 +82,18 @@ body {
   color: #2e2f42;
 }
 
+.header-link:hover,
+.header-link:focus {
+  color: var(--primary-text-color);
+}
+
+.header-link:active {
+  color: #4d5ae5;
+}
+
+.header-link.active-page {
+  color: #4d5ae5;
+}
 .address {
   font-style: normal;
 }
@@ -96,20 +108,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
-
-.header-link:active,
-.address-email:active {
-  color: #404bbf;
-}
-
-.header-link:hover,
-.header-link:focus,
-.address-email:hover,
-.address-email:focus,
-.address-tel:hover,
-.address-tel:focus {
-  color: #4d5ae5;
 }
 
 /* ----- HERO ----- */
@@ -132,14 +130,22 @@ body {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  align-items: center;
   letter-spacing: 0.04em;
   background-color: var(--button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   color: var(--light-color);
+  cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.hero-btn:active {
   background-color: #404bbf;
 }
 
@@ -162,12 +168,13 @@ body {
 }
 
 /* .section-list {
-}
-.section-item {
 } */
+.section-item {
+  background-color: #fff;
+}
 
 .section-caption {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -177,6 +184,48 @@ body {
 .section-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+/* ----- PORTFOLIO ----- */
+
+/* .filter-list {
+} */
+
+.filter-btn {
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  background-color: var(--accent-color);
+  color: #4d5ae5;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus,
+.active-btn {
+  background-color: var(--button-color);
+  color: var(--light-color);
+}
+
+.filter-btn:active {
+  background-color: #404bbf;
+  color: var(--light-color);
+}
+
+/* .gallery-list {
+} */
+
+.gallery-item > .link {
+  color: currentColor;
+}
+
+.gallery-description {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: #8e8f99;
 }
 
 /* ----- FOOTER ----- */
