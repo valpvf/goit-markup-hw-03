@@ -17,7 +17,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: #ffffff;
+  background-color: #ffffff;
   color: var(--primary-text-color);
 }
 
@@ -29,51 +29,90 @@ body {
   text-decoration: none;
 }
 
-.header {
-}
-.header-navigation {
+.center {
+  text-align: center;
 }
 
-.header-logo {
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+/* ----- HEADER ----- */
+
+/* .header {
+}
+.header-navigation {
+} */
+
+.header-logo {
+  line-height: 1.33;
   color: var(--title-text-color);
 }
 
 .logo-color {
-  color: var(--button-color);
+  color: #4d5ae5;
 }
 
-.header-list {
+/* .header-list {
 }
 .header-item {
-}
+} */
+
 .header-link {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+  color: #2e2f42;
 }
+
 .address {
+  font-style: normal;
 }
-.address-list {
+
+/* .address-list {
 }
 .address-item {
-}
+} */
 
 .address-email,
 .address-tel {
-  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: #434455;
 }
 
-/* main */
+.header-link:active,
+.address-email:active {
+  color: #404bbf;
+}
+
+.header-link:hover,
+.header-link:focus,
+.address-email:hover,
+.address-email:focus,
+.address-tel:hover,
+.address-tel:focus {
+  color: #4d5ae5;
+}
+
+/* ----- HERO ----- */
 
 .hero {
   background-color: var(--dark-bg-color);
@@ -97,4 +136,62 @@ body {
   letter-spacing: 0.04em;
   background-color: var(--button-color);
   color: var(--light-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
+}
+
+/* ----- SECTION ----- */
+
+/* .section {
+}
+ */
+.section.accent-bg {
+  background-color: var(--accent-color);
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-text-color);
+}
+
+/* .section-list {
+}
+.section-item {
+} */
+
+.section-caption {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.section-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ----- FOOTER ----- */
+
+.footer {
+  background-color: var(--dark-bg-color);
+}
+
+.footer-logo {
+  line-height: 1.17;
+  color: var(--light-color);
+}
+
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #e7e9fc;
 }
