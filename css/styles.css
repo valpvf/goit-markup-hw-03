@@ -173,6 +173,10 @@ body {
   background-color: #fff;
 }
 
+.section-item.card-team {
+  width: 264px;
+}
+
 .section-caption {
   font-weight: 600;
   font-size: 20px;
@@ -216,6 +220,10 @@ body {
 
 /* .gallery-list {
 } */
+
+.gallery-item {
+  width: 360px;
+}
 
 .gallery-item > .link {
   color: currentColor;
