@@ -197,6 +197,7 @@ body {
 
 .filter-btn {
   font-family: inherit;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
   text-align: center;
@@ -229,12 +230,11 @@ body {
   color: currentColor;
 }
 
-.gallery-description {
+/* .gallery-description {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
-  background-color: #8e8f99;
-}
+  color: #f4f4fd;  
+} */
 
 /* ----- FOOTER ----- */
 
