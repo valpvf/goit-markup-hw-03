@@ -52,14 +52,14 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
   /* outline: 2px solid red; */
 }
 
@@ -270,6 +270,7 @@ img {
 .principles-list {
   display: flex;
   gap: 24px;
+  width: calc(100% - 4 * 24px) / 4;
 }
 
 /* .principles-item{
@@ -315,7 +316,12 @@ img {
   gap: 24px;
 }
 
-/*.team-item {} */
+.team-item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
 
 .team-content {
   padding-top: 32px;
